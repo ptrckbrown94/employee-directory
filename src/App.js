@@ -10,7 +10,7 @@ class App extends Component() {
 
   }
 
-  componentDidMount(){
+  componentDisMount(){
   
     // call the api for get the users
     const getusers = API.search()
