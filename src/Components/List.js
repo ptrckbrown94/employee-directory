@@ -4,10 +4,9 @@ import React from "react";
 function List(props) {
 
     return (
-        <table class="table">
+        <table className="table">
             <thead>
-                <tr>
-                    <th scope="col"></th>
+                <tr>                    
                     <th scope="col">First</th>
                     <th scope="col">Last</th>
                     <th scope="col">DOB</th>
@@ -18,7 +17,6 @@ function List(props) {
             <tbody>
                 {props.users.map(user =>
                     <tr>
-                        <td></td>
                         <td >{user.name.first}</td>
                         <td >{user.name.last}</td>
                         <td >{user.dob.age}</td>
