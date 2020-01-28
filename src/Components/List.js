@@ -9,7 +9,7 @@ function List(props) {
                 <tr>                    
                     <th scope="col">First</th>
                     <th scope="col">Last</th>
-                    <th scope="col">DOB</th>
+                    <th scope="col"><button>Age</button></th> 
                     <th scope="col">City</th>
                     <th scope="col">email</th>
                 </tr>

@@ -5,6 +5,7 @@ import List from "./Components/List"
 import SearchForm from "./Components/Form"
 import API from "./utils/api.js"
 import axios from "axios"
+import Header from "./Components/Header"
 
 class App extends Component {
   state = {
