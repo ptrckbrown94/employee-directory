@@ -44,7 +44,7 @@ class App extends Component {
     });
   };
 
-  // When the form is submitted, search the Giphy API for `this.state.search`
+  // When the form is submitted, search the  API for `this.state.search`
   handleFormSubmit = event => {
     event.preventDefault();
     console.log("searchterm:", this.state.search)
@@ -56,6 +56,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Header/>
         <SearchForm
           search={this.state.search}
           handleFormSubmit={this.handleFormSubmit}

@@ -13,7 +13,7 @@ This was a homework assignement.
 I  create this project from the outline given to me by my Triology Education Services instructor. I  also took code from my old homework and in class activities. I had help from my tutor Isabel Arcones.
 
 ## Contributing 
-I was the only person contributing to this project, but I also had help from my tutor, professor, TA and classmates. 
+I was the only person contributing to this project, but had help from my professor, TA, tutor and classmates.
 
 ## Challenges
   
