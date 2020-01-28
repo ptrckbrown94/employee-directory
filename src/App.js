@@ -17,8 +17,6 @@ class App extends Component {
 
   componentDidMount() {
 
-
-
     const BASEURL = "https://randomuser.me/api/?results=200";
 
     // Export an object with a "search" method that searches the RAMDOMUSER API for the passed query
@@ -26,10 +24,8 @@ class App extends Component {
     axios.get(BASEURL)
       .then(db => {
 
-        console.log(db.data.results)
         // call the api for get the users
         const getusers = db.data.results
-        console.log("users")
         this.setState({ users: getusers, usersFilter: getusers })
       })
   }
@@ -40,7 +36,6 @@ class App extends Component {
     this.setState({
       [name]: value,
       usersFilter: this.state.users.filter(user => (user.name.first.toLowerCase()).indexOf(this.state.search.toLowerCase()) !== -1)
-
     });
   };
 
@@ -53,6 +48,24 @@ class App extends Component {
     // this.searchGiphy(this.state.search);
   };
 
+  //sort array was taken from stackoverflow
+  sortAge(){
+    let sortedArray = this.state.users
+    function compare(a, b) {
+      if (a.dob.age > b.dob.age) {
+        return -1;
+      }
+      if (a.dob.age < b.dob.age) {
+        return 1;
+      }
+      // a must be equal to b
+      return 0;
+    }
+    console.log(sortedArray.sort(compare))
+    this.setState({user: sortedArray.sort(compare)})
+  }
+
+  // render will pull the information fom the Components library 
   render() {
     return (
       <div className="App">
@@ -62,6 +75,7 @@ class App extends Component {
           handleFormSubmit={this.handleFormSubmit}
           handleInputChange={this.handleInputChange}
         />
+        <button onClick = {() => this.sortAge()}>Sort by Age</button> <button>Sort </button>
         <List
           users={this.state.usersFilter}
         />

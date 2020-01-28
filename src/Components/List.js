@@ -16,6 +16,9 @@ import React from "react";
 //     }
 // };
 
+// the below function is used to render the the information from the API 
+
+
 function List(props) {
 
     return (
