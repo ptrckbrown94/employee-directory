@@ -61,7 +61,6 @@ class App extends Component {
       // a must be equal to b
       return 0;
     }
-    console.log(sortedArray.sort(compare))
     this.setState({user: sortedArray.sort(compare)})
   }
 
@@ -75,7 +74,7 @@ class App extends Component {
           handleFormSubmit={this.handleFormSubmit}
           handleInputChange={this.handleInputChange}
         />
-        <button onClick = {() => this.sortAge()}>Sort by Age</button> <button>Sort </button>
+        <button onClick = {() => this.sortAge()}>Sort by Age</button> 
         <List
           users={this.state.usersFilter}
         />
