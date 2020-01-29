@@ -19,7 +19,7 @@ I was the only person contributing to this project, but had help from my profess
 ## Challenges
   
   
-## Live Site on Heroku
+## Live Site with Netlify
 https://5e308edebd2243ae69e0d153--stupefied-noyce-08fa5b.netlify.com/
 
 
